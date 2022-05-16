@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Te lo Vendo</title>
+
+    <script src="https://kit.fontawesome.com/1de577d2e6.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-success">
+
+    <div class="min-vh-100 d-flex flex-column 
+    justify-content-between">
+
+        <!-------------------------------------------------------NAVBAR------------------------------------------------------->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">TLV</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0 text-uppercase ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/estadisticas.html">Estadisticas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-------------------------------------------------------NAVBAR------------------------------------------------------->
+        <!-------------------------------------------------------TABLA--------------------------------------------------->
+        <div class="container my-5 py-5">
+            <table id="stats" class="estadisticas pt-3">
+                <thead class="bg-secondary">
+                    <tr>
+                        <th>N&deg; Pedido</th>
+                        <th>Fecha Pedido</th>
+                        <th>Rut Cliente</th>
+                        <th>N&deg; Documento</th>
+                        <th>Monto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>01/01/2022</td>
+                        <td>17.673.846-7</td>
+                        <td>62893-8</td>
+                        <td>189.990</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>01/01/2022</td>
+                        <td>11.235.846-5</td>
+                        <td>82094-1</td>
+                        <td>590.560</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>02/01/2022</td>
+                        <td>12.357.544-</td>
+                        <td>62895-2</td>
+                        <td>36.590</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>03/01/2022</td>
+                        <td>14.673.839-6</td>
+                        <td>45893-3</td>
+                        <td>123.450</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>03/01/2022</td>
+                        <td>15.112.846-4</td>
+                        <td>32789-3</td>
+                        <td>563.940</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>04/01/2022</td>
+                        <td>17.990.345-9</td>
+                        <td>83893-7</td>
+                        <td>100.000</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>04/01/2022</td>
+                        <td>16.112.846-8</td>
+                        <td>63467-2</td>
+                        <td>100.100</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>05/01/2022</td>
+                        <td>18.743.849-9</td>
+                        <td>78392-7</td>
+                        <td>300.500</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>05/01/2022</td>
+                        <td>12.283.333-1</td>
+                        <td>64389-0</td>
+                        <td>367.090</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>05/01/2022</td>
+                        <td>13.111.826-9</td>
+                        <td>17384-2</td>
+                        <td>367.890</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+        <!-------------------------------------------------------TABLA--------------------------------------------------->
+
+
+        <footer class="footer mt-auto py-5 bg-dark text-center">
+            <div class="container">
+                <span class="text-muted">Los Huasos Tech, 2022</span>
+            </div>
+            <div class="container">
+                <span class="text-muted">Todos los derechos reservados ©</span>
+            </div>
+
+    </div>
+
+
+
+
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#stats').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+                }
+            }
+            );
+        });
+
+
+    </script>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+</html>
