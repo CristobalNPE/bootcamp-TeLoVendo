@@ -9,3 +9,6 @@ function checkIfEmpty() {
     }
   }
 }
+function imprimirDatos(){
+  
+}
